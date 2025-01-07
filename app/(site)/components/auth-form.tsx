@@ -163,9 +163,7 @@ const AuthForm = () => {
 
         <div className="flex gap-2 justify-center text-sm mt-6 px-2 text-gray-500">
           <p>
-            {variant === "LOGIN"
-              ? "New to Messenger?"
-              : "Already have an account?"}
+            {variant === "LOGIN" ? "New to Twak?" : "Already have an account?"}
           </p>
 
           <a onClick={toggleVariant} className="underline cursor-pointer">
