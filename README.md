@@ -37,15 +37,32 @@ messenger-clone/
         |--- get-session.ts
         |--- get-users.ts
     |-- api/
-        |--- auth/[...nextauth]
-        |--- conversations/[conversationId]
+        |--- auth/[...nextauth]/
+            |---- route.ts
+        |--- conversations/[conversationId]/
+            |---- seen/
+                |----- route.ts
+            |---- route.ts
+        |--- route.ts
         |--- messages/
+            |---- route.ts
         |--- register/
+            |---- route.ts
         |--- settings/
+            |---- route.ts
     |-- components/
         |--- inputs/
+            |---- input.tsx
+            |---- select.tsx
         |--- modals/
+            |---- modal.tsx
+            |---- settings-modal.tsx
         |--- sidebar/
+            |---- desktop-item.tsx
+            |---- desktop-sidebar.tsx
+            |---- mobile-footer.tsx
+            |---- mobile-item.tsx
+            |---- sidebar.tsx
         |--- active-status.tsx
         |--- avatar-group.tsx
         |--- avatar.tsx
@@ -61,7 +78,9 @@ messenger-clone/
     |-- conversations/
         |--- [conversationId]/
             |---- components/
-        |--- components/
+                |----- conversation-box.tsx
+                |----- conversation-list.tsx
+                |----- group-chat-modal.tsx
         |--- layout.tsx
         |--- loading.tsx
         |--- page.tsx
@@ -78,6 +97,8 @@ messenger-clone/
         |--- index.ts
     |-- users/
         |--- components/
+            |---- user-box.tsx
+            |---- user-list.tsx
         |--- layout.tsx
         |--- loading.tsx
         |--- page.tsx
